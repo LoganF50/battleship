@@ -1,0 +1,20 @@
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    --c-blue: hsl(175, 85%, 33%);
+    --c-orange: hsl(22, 59%, 51%);
+    --c-main-dark: hsl(0, 0%, 18%);
+    --c-main-darker: hsl(0, 0%, 15%);
+    --c-main-light: hsl(193, 16%, 83%);
+    background-color: var(--c-main-dark);
+    color: var(--c-main-light);
+    font-size: 62.5%;
+  }
