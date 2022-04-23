@@ -2,20 +2,19 @@ import Gameboard from "../gameboard";
 import Ship from "../ship";
 
 describe('Gameboard', () => {
-    let newBoard;
-    let ship1 = Ship('carrier', 5, true);
-    let ship2 = Ship('battleship', 4, false);
+    let newBoard: Gameboard;
+    let ship1: Ship = new Ship('carrier', 5, true);
+    let ship2: Ship = new Ship('battleship', 4, false);
 
     beforeEach(() => {
-        newBoard = Gameboard();
-        newBoard.createBlankBoard();
+        newBoard = new Gameboard();
     })
 
     //createBlankBoard
     test('cells start with correct values', () => {
-        let cellCount = 0;
-        let cellShipCount = 0;
-        let cellShotAtCount = 0;
+        let cellCount: number = 0;
+        let cellShipCount: number = 0;
+        let cellShotAtCount: number = 0;
         let board = newBoard.board;
 
         for(let i = 0; i < board.length; i++) {

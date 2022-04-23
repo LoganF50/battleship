@@ -1,10 +1,10 @@
 import Ship from "../ship";
 
 describe('Ship', () => {
-    let newShip;
+    let newShip: Ship;
 
     beforeEach(() => {
-        newShip = Ship('testShip', 3, true, 1);
+        newShip = new Ship('testShip', 3, true);
     })
 
     test('has correct id', () => {

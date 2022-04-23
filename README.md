@@ -8,3 +8,5 @@ Single player Battleship game
 
 ## Built With
 - [jest](https://jestjs.io/)
+- [TypeScript](https://www.typescriptlang.org)
+- [React](https://reactjs.org/)
